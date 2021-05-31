@@ -26,15 +26,13 @@ int main(void) {
 
 float wallis_pi( int n)
 {
-  float pi=0.0;
-  float p=0.0;int l=0; int r=0;
-  for (int i=0; i<n; i++)
-  {
-    l=(2*i)/(2*i - 1);
-    r=(2*i)/(2*i + 1);
-    p=l*r;
-    pi+=p;
-  }
-  retrun (pi*2.0);
+    float term=0.0;float prod=1;float num=0; float den=0;
+    for (int i=1;i<=n;i++)
+    {
+        num=(4*i*i);
+        den=((4*i*i)-1);
+        term=num/den;
+        prod*=term;
+    }
+    return (prod*2);
 }
-
