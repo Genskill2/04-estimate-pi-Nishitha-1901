@@ -24,3 +24,6 @@ int main(void) {
   }
 }
 
+float wallis_pi( int i)
+{
+    
