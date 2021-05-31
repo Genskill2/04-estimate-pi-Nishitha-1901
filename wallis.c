@@ -24,6 +24,17 @@ int main(void) {
   }
 }
 
-float wallis_pi( int i)
+float wallis_pi( int n)
 {
-    
+  float pi=0.0;
+  int p=0.0;int l=0; int r=0;
+  for (int i=0; i<=n; i++)
+  {
+    l=(2*i)/(2*i - 1);
+    r=(2*i)/(2*i + 1);
+    p=l*r;
+    pi+=p;
+  }
+  retrun pi;
+}
+
