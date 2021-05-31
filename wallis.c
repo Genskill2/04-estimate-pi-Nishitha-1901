@@ -34,5 +34,5 @@ float wallis_pi( int n)
         term=num/den;
         prod*=term;
     }
-    return (prod*2);
+    return (prod*2.0);
 }
