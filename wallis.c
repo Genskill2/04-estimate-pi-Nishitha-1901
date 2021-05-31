@@ -35,6 +35,6 @@ float wallis_pi( int n)
     p=l*r;
     pi+=p;
   }
-  retrun (pi*2);
+  retrun (pi*2.0);
 }
 
