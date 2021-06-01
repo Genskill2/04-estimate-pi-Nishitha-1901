@@ -3,7 +3,26 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int);
+
+float mc_pi(int n)
+{
+  double x=0,y=0,z=0;float pi=0.0;int c=0;
+  for (int i=0; i<n ; i++)
+  {
+    x=(double)rand()/RAND_MAX;
+    y=(double)rand()/RAND_MAX;
+    z=(x*x)+(y*y);
+    if (z<=1)
+    {
+      c++;
+    }
+  }
+ 
+  pi=(double)c/n*4;
+
+  //printf("%f\n",pi);
+  return pi;
+}
 
 float frandom() {
   long int q = random();
