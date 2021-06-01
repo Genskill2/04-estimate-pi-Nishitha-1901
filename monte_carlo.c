@@ -4,6 +4,7 @@
 #include <math.h>
 
 
+
 float mc_pi(int n)
 {
   double x=0,y=0,z=0;float pi=0.0;int c=0;
